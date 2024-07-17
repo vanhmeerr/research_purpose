@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+    <style>
+        .box {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            background-color: aqua;
+            height: 100vh;
+            width: 100%;
+        }
+
+        @media (max-width: 300px) {
+            .box {
+                background-color: green;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 400px) {
+            .box {
+                background-color: pink;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .box {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Resize me!</h1>
+    </div>
+
+</body>
+
+</html>

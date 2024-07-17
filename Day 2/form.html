@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <!-- navigation  -->
+      <div>
+        <nav>
+          <a href="list.html">Home</a>
+          <a href="form.html">Form</a>
+          <a href="table.html">Table</a>
+        </nav>
+      </div>
+      <!-- label, input, button  -->
+      <!-- label, input  -->
+      <table>
+        <tr>
+          <td><label>Name: </label></td>
+          <td><input required type="text" placeholder="Enter your name" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input type="email" placeholder="Enter your email" /></td>
+        </tr>
+
+        <!-- radio, -->
+        <tr>
+          <td>
+            <label>Gender:</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+          </td>
+        </tr>
+
+        <!-- date -->
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" placeholder="Enter your DOB" /></td>
+        </tr>
+
+        <!-- checkbox -->
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td><label>Are you Human?</label></td>
+        </tr>
+
+        <!-- select -->
+        <tr>
+          <td><label>Region</label></td>
+          <td>
+            <select>
+              <option disabled selected>Select Region</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- textarea  -->
+        <tr>
+          <td><label>Message</label></td>
+          <td><textarea placeholder="Enter your message"></textarea></td>
+
+          <!-- button -->
+        </tr>
+
+        <tr>
+          <td><button>Submit</button></td>
+        </tr>
+
+        <!-- video and audio -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/H58vbez_m4E?si=Dvc638GFD6f7l6qZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <video src="" controls></video>
+        <audio src="" controls></audio>
+      </table>
+    </form>
+  </body>
+</html>

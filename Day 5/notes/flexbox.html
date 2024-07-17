@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .centerflex {
+            display: flex;
+            justify-content: center;
+            /* align horizontally */
+            align-items: center;
+            /* align vertically */
+            background-color: aqua;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            border: 5px solid black;
+        }
+
+        .flexdirection {
+            display: flex;
+            background-color: aqua;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-direction: row;
+        }
+
+        .direction {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            border: 5px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent centerflex">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+
+    <div class="flexdirection">
+        <div class="div1 direction">1</div>
+        <div class="div2 direction">2</div>
+        <div class="div3 direction">3</div>
+    </div>
+
+</body>
+
+</html>

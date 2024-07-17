@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#circle {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+
+a {
+    text-decoration: none;
+    padding: 50px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.a1 {
+    margin: 100px;
+}
+
+#container {
+    background-color: black;
+    height: 60px;
+    padding: 5px white;
+}
+
+button {
+    background-color: #f08804;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#amazon {
+    color: #f08804;
+}

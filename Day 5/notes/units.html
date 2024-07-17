@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        .c100 {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+
+        .half {
+            width: 20%;
+            height: 50px;
+            background-color: green;
+        }
+
+        .c50 {
+            width: 50%;
+            height: 50px;
+            background-color: blue;
+        }
+
+        .emparent {
+            font-size: 20px;
+        }
+
+        .emchild {
+            font-size: 2em;
+        }
+
+        .rem {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- percentage units -->
+    <div class="c100"> This is 100% width of webpage
+        <div class="half"> This is 20% width of div</div>
+    </div>
+    <div class="c50"> This is 50% width of webpage</div>
+
+    <!-- em units  -->
+    <!-- em is a units regarding font size and it is relative to parent element  -->
+
+    <div class="emparent"> This is the em parent
+        <div class="emchild">This is em child</div>
+    </div>
+
+    <!-- rem units  -->
+    <!-- rem is a units regarding font size and it is relative to root element  -->
+    <!-- need html root element -->
+
+    <div class="rem"> This is the rem </div>
+</body>
+
+</html>

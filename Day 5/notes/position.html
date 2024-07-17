@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+            height: 1000px;
+        }
+
+        div {
+            background-color: red;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .div1 {
+            position: relative;
+            left: 50px;
+        }
+
+        .div2 {
+            position: absolute;
+            right: 50px;
+        }
+
+        .div3 {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .div4 {
+            position: sticky;
+            top: 50px;
+            left: 100px;
+            background-color: blue;
+        }
+
+        .div5 {
+            position: relative;
+            z-index: -1;
+            background-color: green;
+            top: 10px;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Relative Position</div>
+    <div class="div2">Absolute Position</div>
+    <div class="div3">fixed</div>
+    <div class="div4">sticky</div>
+    <div class="div5">z-index</div>
+
+</body>
+
+</html>
