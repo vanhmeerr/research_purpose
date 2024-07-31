@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment javascript 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container text-center p-5 bg-light rounded shadow">
+        <input type="number" id="num" placeholder="Enter a number">
+
+        <input type="button" value="Check" onclick="check()">
+        <input type="button" value="Factorial" onclick="fact()">
+
+        <div id="show" class="mt-5 mb-5 p-5 bg-light rounded shadow"></div>
+        <div id="show1" class="mt-5 mb-5 p-5 bg-light rounded shadow"></div>
+
+    </div>
+
+    <script>
+        function check() {
+            var num;
+            num = document.getElementById("num").value;
+            if (num % 2 == 0) {
+                document.getElementById("show").innerHTML = "Even";
+            } else {
+                document.getElementById("show").innerHTML = "Odd";
+            }
+        }
+
+        function fact() {
+            var num;
+            var fact = 1;
+            num = document.getElementById("num").value;
+            if (num > 0) {
+                for (var i = 1; i <= num; i++) {
+                    fact = fact * i;
+                }
+                document.getElementById("show1").innerHTML = "Factorial is " + fact;
+            }
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

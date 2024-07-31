@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label>Enter 10 or 20 or 30:</label>
+    <input type="text" id="num">
+    <br>
+    <button onclick="check()">Show</button>
+    <div id="show"></div>
+    <script>
+        function check() {
+            var num =
+                document.getElementById("num").value; if (num
+                    == 10) {
+                document.getElementById("show").innerHTML = "Good, you entered " + num;
+            } else if (num == 20) {
+                document.getElementById("show").innerHTML = "Great, you entered " + num;
+            } else if (num == 30) {
+                document.getElementById("show").innerHTML = "Excellent, you entered " + num;
+            } else {
+                document.getElementById("show").innerHTML = "Please enter correct value";
+            }
+        }
+    </script>
+</body>
+
+</html>

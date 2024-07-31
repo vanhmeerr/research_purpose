@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(197, 196, 196);
+            color: rgb(255, 255, 255);
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Discount Calculator</h1>
+
+    <div class="container" style="text-align: center; margin-top: 10%;">
+        <input type="text" id="userType" placeholder="Enter your pass">
+        <input type="text" id="purchaseAmount" placeholder="Amount">
+        <button onclick="calculateDiscount()">Calculate Discount</button>
+        <div id="show"></div>
+    </div>
+
+
+
+    <script>
+        function calculateDiscount() {
+            let userType;
+            let purchaseAmount;
+            let discount;
+            let finalPrice;
+
+
+            userType = document.getElementById("userType").value;
+            purchaseAmount = document.getElementById("purchaseAmount").value;
+            switch (userType) {
+                case "guest":
+                    discount = 0;
+                    break;
+                case "member":
+                    discount = 5;
+                    break;
+                case "premium_member":
+                    discount = 10;
+                    break;
+                case "employee":
+                    discount = 20;
+                    break;
+                default:
+                    discount = 0;
+            }
+
+            finalPrice = purchaseAmount - (purchaseAmount * discount) / 100;
+            document.getElementById("show").innerHTML = "Discount: " + discount + "%<br>Final Price: RM " + finalPrice;
+        }
+        calculateDiscount();
+    </script>
+
+</body>
+
+</html>

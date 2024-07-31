@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title {
+  color: red;
+}
+
+#title1 {
+  color: blue;
+}
+
+#title2 {
+  color: green;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Create an array called fruits and initialize it with the following fruit names: "apple", "banana", "cherry". 
+        // initialize an array 
+        let fruits = ["apple", "banana", "cherry"];
+
+        // Add "orange" to the end of the fruits array
+        fruits.push("orange");
+
+        // Add "mango" to the beginning of the fruits array
+        fruits.unshift("mango");
+        console.log(fruits);
+
+        // Remove the last element from the fruits array and store it in a variable called lastFruit
+        let lastFruit = fruits.pop();
+        console.log(lastFruit);
+
+        // Remove the first element from the fruits array and store it in a variable called firstFruit
+        let firstFruit = fruits.shift();
+        console.log(firstFruit);
+
+        // Access and display the second element in the fruits array
+        console.log(fruits[1]);
+
+        // Use a for loop to iterate through the fruits array and display each fruit
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+    </script>
+
+</body>
+
+</html>
