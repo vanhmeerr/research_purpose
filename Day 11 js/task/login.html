@@ -10,28 +10,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-dark">
 
-    <div class="container mt-5 text-center mb-5 p-5 bg-light rounded shadow ">
-        <h1>Age detector</h1>
-        <p>Enter Your Age</p>
-        <input type="number" id="age">
-
-        <br>
-        <input type="button" value="Submit" onclick="login()">
+    <div class="container text-center my-5 p-5 bg-light rounded shadow w-50 mx-auto">
+        <h1>Find Your Age Category</h1>
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age">
+        <button onclick="checkAge()">Submit</button>
+        <p id="message"></p>
     </div>
 
     <script>
 
-        function login() {
-            var age;
-            age = document.getElementById("username").value;
-            if ((age <= "18") || (age >= "60")) {
-                alert("you are eligible for voting");
+        function checkAge() {
+            const age = document.getElementById('age').value;
+            const messageElement = document.getElementById('message');
+
+            let message = '';
+
+            if (age < 0) {
+                message = 'Age cannot be negative!';
+            } else if (age < 13) {
+                message = 'You are a child.';
+            } else if (age < 20) {
+                message = 'You are a teenager.';
+            } else if (age < 60) {
+                message = 'You are an adult.';
             } else {
-                alert("you are not eligible for voting");
+                message = 'You are a senior.';
             }
+
+            messageElement.textContent = message;
         }
+
     </script>
 
 
